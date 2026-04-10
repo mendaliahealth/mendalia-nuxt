@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
             {/* Brand column */}
             <div className="lg:col-span-2">
-              <Image src="/images/logo.svg" alt="Mendalia AI" width={140} height={36} className="mb-4 brightness-0 invert" />
+              <Image src="/images/mendalia-logo-light.png" alt="Mendalia AI" width={140} height={36} className="mb-4 brightness-0 invert" />
               <p className="text-white/40 text-[0.84rem] leading-relaxed mb-5 max-w-[320px]">
                 The AI-native Ambient Clinical Reasoning Engine. From spoken words to complete diagnosis. End to end.
               </p>
