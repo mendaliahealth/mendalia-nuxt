@@ -249,7 +249,7 @@ export default function Traction() {
             ].map((p) => (
               <div key={p.caption} className="bg-white rounded-2xl border border-[var(--border)] overflow-hidden card-hover sr-hidden">
                 <div className="relative h-44">
-                  <Image src={p.img} alt={p.alt} fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
+                  <Image src={p.img} alt={p.alt} fill className="object-cover object-top" sizes="(max-width: 768px) 50vw, 25vw" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 text-white text-[0.55rem] font-semibold leading-snug">{p.caption}</div>
                 </div>
