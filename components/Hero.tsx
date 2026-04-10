@@ -37,12 +37,7 @@ export default function Hero() {
       <div className="absolute w-[500px] h-[380px] -top-20 -right-28 rounded-full pointer-events-none animate-drift-b" style={{ background: "radial-gradient(circle,rgba(13,138,114,0.08),transparent 70%)", filter: "blur(70px)" }} aria-hidden="true" />
 
       {/* Pill badge */}
-      <div className="relative z-10 flex items-center gap-2 bg-white/85 border border-[rgba(10,107,90,0.15)] rounded-full px-4 py-1.5 text-[0.73rem] font-bold tracking-wider text-[var(--brand)] mb-8 backdrop-blur-lg shadow-[0_2px_18px_rgba(10,107,90,0.1)] animate-fade-up max-w-[90vw] flex-wrap justify-center text-center">
-        <span className="w-5 h-5 rounded-full bg-[rgba(10,107,90,0.12)] flex items-center justify-center flex-shrink-0">
-          <span className="w-2 h-2 rounded-full bg-[var(--brand)] animate-pulse-dot" />
-        </span>
-        <span>AI Native Clinical Reasoning &nbsp;·&nbsp; 200+ Clinicians &nbsp;·&nbsp; Web + iOS + Android</span>
-      </div>
+      
 
       {/* Headline */}
       <h1

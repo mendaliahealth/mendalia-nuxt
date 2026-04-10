@@ -31,7 +31,7 @@ export default function Nav() {
         aria-label="Main navigation"
       >
         <Link href="/" className="flex items-center gap-2 flex-shrink-0" aria-label="Mendalia AI Home">
-          <Image src="/images/logo.svg" alt="Mendalia AI" width={140} height={36} priority />
+          <Image src="/images/mendalia-logo-light.png" alt="Mendalia AI" width={140} height={36} priority />
         </Link>
 
         {/* Desktop links */}
@@ -50,7 +50,7 @@ export default function Nav() {
 
         <div className="hidden md:flex gap-3 items-center">
           <a
-            href="https://ai.mendalia.com/login"
+            href="https://ai.mendalia.com/auth/login"
             className="text-[0.82rem] font-semibold text-[var(--ink)] hover:text-[var(--brand)] transition-colors px-3 py-1.5 rounded-lg"
           >
             Log in
