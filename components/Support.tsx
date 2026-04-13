@@ -22,7 +22,7 @@ export default function Support() {
           Have a question, hit a snag, or want to talk through how Mendalia fits your workflow? Our team reads every message and gets back to you promptly — usually within one business day.
         </p>
 
-        
+        <a
           href="mailto:connect@mendalia.com"
           className="inline-flex items-center gap-2.5 bg-[var(--brand)] text-white text-[0.9rem] font-semibold no-underline px-7 py-3.5 rounded-xl hover:opacity-90 transition-opacity"
         >
