@@ -19,6 +19,7 @@ export default function Nav() {
     { label: "Pricing", href: "#pricing" },
     { label: "Resources", href: "/resources" },
     { label: "FAQ", href: "#faq" },
+    { label: "Support", href: "#support" },
   ];
 
   return (

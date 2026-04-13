@@ -11,6 +11,7 @@ import MobileApp from "@/components/MobileApp";
 import Specialties from "@/components/Specialties";
 import CompareSection from "@/components/CompareSection";
 import FAQ from "@/components/FAQ";
+import Support from "@/components/Support";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -33,6 +34,7 @@ export default function Home() {
         <Specialties />
         <CompareSection />
         <FAQ />
+        <Support />
         <CTA />
       </main>
       <Footer />
