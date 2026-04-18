@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <Header />
+      <Nav />
 
       <main className="flex-1 w-full max-w-4xl mx-auto px-6 py-16 md:py-24">
         <div className="bg-white rounded-3xl shadow-sm border border-slate-200/60 p-8 md:p-14 lg:p-20">
