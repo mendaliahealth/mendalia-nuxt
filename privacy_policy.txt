@@ -1,0 +1,162 @@
+ Privacy Policy for Mendalia AI
+
+  Effective Date: April 14, 2026
+  Last Updated: April 14, 2026
+
+  Mendalia AI ("we," "us," or "our") is committed to
+  protecting the privacy and security of clinical and
+  personal data. This Privacy Policy explains how we
+  collect, use, disclose, and safeguard information when
+  you use the Mendalia AI mobile application and web
+  platform (the "Service").
+
+  Mendalia AI is a clinical reasoning support tool
+  designed for healthcare professionals. By using the
+  Service, you agree to the collection and use of
+  information in accordance with this policy.
+
+  ---
+
+  1. Information We Collect
+
+  A. Personal Account Information
+  When you register for an account, we collect:
+   * Identity Data: Full name, professional title, and
+     gender (for avatar customization).
+   * Contact Data: Email address and phone number (for
+     OTP verification).
+   * Authentication Data: Google Sign-In identifiers and
+     Firebase Auth tokens.
+
+  B. Clinical & Patient Data (The "Processed Data")
+  As an AI-native ambient reasoning engine, we process:
+   * Audio Recordings: Ambient recordings of clinical
+     consultations (collected only with clinician
+     activation).
+   * Transcriptions: Text-based versions of the audio
+     recordings.
+   * Medical Documents: Photos or PDFs of lab results,
+     reports, and clinical notes uploaded by the user.
+   * Patient Metadata: Names or identifiers used to
+     organize cases within the app.
+
+  C. Automatically Collected Data
+   * Usage Data: Information on how the Service is
+     accessed (e.g., feature usage, session duration).
+   * Device Information: IP address, device type,
+     operating system version, and unique device
+     identifiers.
+
+  ---
+
+  2. How We Use Your Information
+
+  We use the collected data for the following purposes:
+   * AI Reasoning: To generate differential diagnoses,
+     care plans, and clinical letters using Large
+     Language Models (LLMs).
+   * Service Delivery: To maintain your account, sync
+     cases across devices, and provide real-time updates
+     via Firestore.
+   * Communication: To send OTP codes, security alerts,
+     and support responses.
+   * Improvement: To monitor usage patterns and improve
+     the accuracy of our clinical reasoning algorithms.
+
+  ---
+
+  3. Data Processing and Storage
+
+  A. Single Source of Truth
+  All real-time analysis data is stored in Google Cloud
+  Firestore. We employ a "Patching Strategy" to ensure
+  data integrity and real-time synchronization between
+  our Django backend and your mobile/web client.
+
+  B. AI Processing
+  Clinical data (transcripts and reports) is processed
+  via secure Google Cloud Functions and Vertex AI.
+   * Data Isolation: We do not use your specific patient
+     data to train global, multi-tenant Large Language
+     Models.
+   * Ephemeral Processing: Audio recordings are
+     processed for transcription and reasoning, then
+     handled according to our data retention schedule.
+
+  C. Security Measures
+  We implement industry-standard security protocols,
+  including:
+   * Encryption in Transit: All data is sent via
+     HTTPS/TLS 1.2+.
+   * Encryption at Rest: Data in Firestore and GCS is
+     encrypted at the disk level.
+   * Authentication: Secure JWT (JSON Web Tokens) and
+     Firebase Authentication.
+
+  ---
+
+  4. Data Sharing and Disclosure
+
+  We do not sell your personal or clinical data. We
+  share data only in the following circumstances:
+   * Service Providers: With trusted third parties like
+     Google Cloud Platform (GCP) for hosting and AI
+     processing.
+   * Legal Requirements: If required by law to comply
+     with a subpoena or similar legal process.
+   * Safety: When we believe disclosure is necessary to
+     protect our rights or the safety of users.
+
+  ---
+
+  5. Clinician Responsibility & Patient Consent
+
+  Mendalia AI is a tool for healthcare professionals.
+   * Consent: It is the sole responsibility of the
+     clinician to obtain the necessary verbal or written
+     consent from patients before using the ambient
+     recording or document upload features.
+   * De-identification: While our AI assists in
+     reasoning, clinicians are encouraged to follow best
+     practices for data minimization.
+
+  ---
+
+  6. Data Retention and Deletion
+
+  We retain account information as long as your account
+  is active. You may request the deletion of specific
+  cases or your entire account at any time through the
+  app settings or by contacting connect@mendalia.com.
+  Upon account deletion, all associated patient data is
+  purged from our active databases.
+
+  ---
+
+  7. International Data Transfers
+
+  Your information may be transferred to—and maintained
+  on—computers located outside of your state or country
+  where data protection laws may differ. Our primary
+  servers are located in the India and USA via Google
+  Cloud Platform.
+
+  ---
+
+  8. Your Rights
+
+  Depending on your location, you may have the right to:
+   * Access the personal data we hold about you.
+   * Request correction of inaccurate data.
+   * Object to the processing of your data.
+   * Request the portability of your data.
+
+  ---
+
+  9. Contact Us
+
+  If you have any questions about this Privacy Policy or
+  our data practices, please contact our support team:
+
+  Email: connect@mendalia.com
+  Website: https://mendalia.com/support

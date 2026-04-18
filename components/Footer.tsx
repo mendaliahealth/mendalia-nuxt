@@ -14,16 +14,7 @@ const LEGAL_CONTENT = {
       { heading: "5. Limitation of Liability", body: "To the fullest extent permitted by law, Sirohi Corporation Pty Ltd shall not be liable for any clinical outcomes, errors, or damages arising from reliance on AI-generated content. All clinical decisions remain the sole responsibility of the treating clinician." },
     ],
   },
-  privacy: {
-    title: "Privacy Policy",
-    sections: [
-      { heading: "1. Data We Collect", body: "We collect information necessary to provide the Mendalia service, including account details, consultation transcripts (processed in real time), and uploaded clinical documents. We do not collect more data than is necessary." },
-      { heading: "2. How We Use Data", body: "Patient data is used solely to generate clinical outputs (transcripts, diagnoses, care plans, letters) within your session. We do not use patient data to train AI models without explicit written consent from the institution." },
-      { heading: "3. Data Storage and Security", body: "All data is encrypted in transit (TLS 1.3) and at rest (AES-256). We store data on secure cloud infrastructure in compliance with applicable data residency requirements. Audit logs are maintained for all AI-assisted decisions." },
-      { heading: "4. Data Sharing", body: "We do not sell, share, or monetise patient data with any third party, ever. Data may only be shared where required by law or with your explicit consent." },
-      { heading: "5. Your Rights", body: "You have the right to access, correct, or delete your personal data at any time. Contact privacy@mendalia.com to exercise these rights. We will respond within 30 days." },
-    ],
-  },
+
   clinical: {
     title: "Clinical Safety",
     sections: [
@@ -58,19 +49,9 @@ export default function Footer() {
                 Headquartered in Sydney, Australia
               </p>
               <div className="flex flex-wrap gap-2">
-                {[
-                  { label: "Terms", tab: "tnc" as const },
-                  { label: "Privacy", tab: "privacy" as const },
-                  { label: "Clinical Safety", tab: "clinical" as const },
-                ].map((item) => (
-                  <button
-                    key={item.label}
-                    onClick={() => openLegal(item.tab)}
-                    className="text-white/30 text-[0.7rem] hover:text-white/60 transition-colors"
-                  >
-                    {item.label}
-                  </button>
-                ))}
+                <button onClick={() => openLegal("tnc")} className="text-white/30 text-[0.7rem] hover:text-white/60 transition-colors">Terms</button>
+                <Link href="/privacy-policy" className="text-white/30 text-[0.7rem] hover:text-white/60 transition-colors">Privacy Policy</Link>
+                <button onClick={() => openLegal("clinical")} className="text-white/30 text-[0.7rem] hover:text-white/60 transition-colors">Clinical Safety</button>
               </div>
             </div>
 
