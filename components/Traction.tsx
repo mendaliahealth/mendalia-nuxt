@@ -224,7 +224,7 @@ export default function Traction() {
         </div>
 
         {/* === BLOCK 4: Pharma === */}
-        <div>
+        {/* <div>
           <div className="flex items-center gap-3 mb-8 sr-hidden">
             <div className="text-[0.7rem] font-bold tracking-widest uppercase text-[var(--brand)]">Pharma Partnerships</div>
             <div className="flex-1 h-px bg-[var(--border)]" />
@@ -256,7 +256,7 @@ export default function Traction() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
