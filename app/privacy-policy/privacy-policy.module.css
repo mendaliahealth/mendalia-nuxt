@@ -1,0 +1,123 @@
+/* Custom Styles for Mendalia Privacy Policy */
+
+.container {
+  min-height: 100vh;
+  background-color: #FFFDF9;
+  font-family: var(--font-montserrat), sans-serif;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgba(1, 107, 97, 0.12);
+  padding-bottom: 32px;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #016B61; /* Base primary Teal */
+  margin-bottom: 18px;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: #4A4540;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.section {
+  background: #ffffff;
+  border: 1px solid rgba(1, 107, 97, 0.08);
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 8px rgba(1, 107, 97, 0.02);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section:hover {
+  transform: translateY(-2px);
+  border-color: rgba(1, 107, 97, 0.25);
+  box-shadow: 0 12px 30px rgba(1, 107, 97, 0.06);
+}
+
+.section:last-child {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0A0A0A;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sectionTitle::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: #016B61;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 0.975rem;
+  color: #4A4540;
+  line-height: 1.78;
+}
+
+.link {
+  color: #016B61;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(1, 107, 97, 0.2);
+  transition: all 0.15s ease;
+}
+
+.link:hover {
+  color: #70B2B2; /* Lighter primary variation */
+  border-bottom-color: #70B2B2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .section {
+    padding: 20px 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+}
