@@ -1,38 +1,17 @@
-import { MetadataRoute } from "next";
+// app/sitemap.ts
 
-const BASE = "https://mendalia.com";
+export const dynamic = 'force-static'; // <--- ADD THIS LINE
+
+import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: BASE,
+      url: 'https://mendalia.com',
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1.0,
+      changeFrequency: 'yearly',
+      priority: 1,
     },
-    {
-      url: `${BASE}/#features`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE}/#how-it-works`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE}/#pricing`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${BASE}/#support`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
+    // ... add your other routes here
   ];
 }
