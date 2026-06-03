@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111110;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+::selection {
+  background: rgba(4, 100, 96, 0.12);
+  color: #111110;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #ffffff; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #046460; }
+
+/* Responsive nav */
+.nav-desktop    { display: none !important; }
+.nav-mobile-btn { display: flex !important; }
+.nav-sign-in    { display: none !important; }
+
+@media (min-width: 768px) {
+  .nav-desktop    { display: flex !important; }
+  .nav-mobile-btn { display: none !important; }
+  .nav-sign-in    { display: block !important; }
+}
+
+/* Floating badge on MockUI */
+.ui-badge { display: none !important; }
+@media (min-width: 1024px) {
+  .ui-badge { display: flex !important; }
+}
