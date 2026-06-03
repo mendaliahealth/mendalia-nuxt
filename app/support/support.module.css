@@ -42,6 +42,7 @@
   grid-template-columns: 1fr 1.4fr;
   gap: 48px;
   align-items: start;
+  margin-bottom: 40px;
 }
 
 /* Sidebar / Info block */
